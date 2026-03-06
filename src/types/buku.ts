@@ -2,7 +2,7 @@ export type kategori = "komik" | "novel" | "majalah";
 export type status = "available" | "borrowed";
 
 export interface Buku {
-    id?: number;
+    id?: string;
     judul: string;
     deskripsi: string;
     tahun: string;
@@ -10,4 +10,5 @@ export interface Buku {
     status?: status;
     peminjam?: string;
     imageUrl?: string;
+
 }
